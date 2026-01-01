@@ -10,7 +10,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <img src={logo} alt="ZB AutoCare" className="h-16 w-auto bg-white/10 p-2 rounded-lg" />
-            <p className="font-urdu text-accent text-xl">محفوظ سفر کی ضمانت</p>
             <p className="text-white/70 text-sm">
               Trusted car mechanic shop in Karachi with 35+ years of experience.
             </p>

@@ -41,10 +41,6 @@ const Index = () => {
             <div className="text-center lg:text-left animate-slide-up">
               <img src={logo} alt="ZB AutoCare" className="h-24 md:h-32 mx-auto lg:mx-0 mb-6" />
               
-              <p className="font-urdu text-accent text-2xl md:text-3xl mb-4">
-                محفوظ سفر کی ضمانت
-              </p>
-              
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 35+ Years of Experience in{' '}
                 <span className="text-gradient">Mechanical Work</span>
@@ -166,7 +162,7 @@ const Index = () => {
                 </div>
               </div>
               <a 
-                href="https://goo.gl/maps/ZBAutocare" 
+                href="https://share.google/niVDDcV4ADLhQtaeu" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-outline whitespace-nowrap"
