@@ -14,7 +14,105 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      gmb_photos: {
+        Row: {
+          category: string | null
+          created_at: string
+          height: number | null
+          id: string
+          photo_id: string
+          photo_url: string
+          thumbnail_url: string | null
+          width: number | null
+        }
+        Insert: {
+          category?: string | null
+          created_at?: string
+          height?: number | null
+          id?: string
+          photo_id: string
+          photo_url: string
+          thumbnail_url?: string | null
+          width?: number | null
+        }
+        Update: {
+          category?: string | null
+          created_at?: string
+          height?: number | null
+          id?: string
+          photo_id?: string
+          photo_url?: string
+          thumbnail_url?: string | null
+          width?: number | null
+        }
+        Relationships: []
+      }
+      gmb_reviews: {
+        Row: {
+          author_name: string
+          comment: string | null
+          created_at: string
+          id: string
+          profile_photo_url: string | null
+          rating: number
+          review_id: string
+          review_time: string | null
+          updated_at: string
+        }
+        Insert: {
+          author_name: string
+          comment?: string | null
+          created_at?: string
+          id?: string
+          profile_photo_url?: string | null
+          rating: number
+          review_id: string
+          review_time?: string | null
+          updated_at?: string
+        }
+        Update: {
+          author_name?: string
+          comment?: string | null
+          created_at?: string
+          id?: string
+          profile_photo_url?: string | null
+          rating?: number
+          review_id?: string
+          review_time?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      gmb_sync_status: {
+        Row: {
+          created_at: string
+          error_message: string | null
+          id: string
+          last_sync_at: string | null
+          status: string | null
+          sync_type: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          error_message?: string | null
+          id?: string
+          last_sync_at?: string | null
+          status?: string | null
+          sync_type: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          error_message?: string | null
+          id?: string
+          last_sync_at?: string | null
+          status?: string | null
+          sync_type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
