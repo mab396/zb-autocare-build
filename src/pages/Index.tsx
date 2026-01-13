@@ -4,7 +4,7 @@ import {
   ThumbsUp, DollarSign, Star, Phone, CheckCircle 
 } from 'lucide-react';
 import logo from '@/assets/logo.png';
-import workshopHero from '@/assets/workshop-hero.jpg';
+import workshopHero from '@/assets/workshop-hero.png';
 
 const services = [
   { icon: Wrench, title: 'Engine Work', desc: 'Complete engine repair & overhaul' },
@@ -48,19 +48,19 @@ const Index = () => {
         <div className="container-custom relative z-10 py-12">
           <div className="max-w-2xl">
             {/* Content */}
-            <div className="text-center lg:text-left animate-slide-up">
-              <img src={logo} alt="ZB AutoCare" className="h-24 md:h-32 mx-auto lg:mx-0 mb-6" />
+            <div className="text-left animate-slide-up">
+              <img src={logo} alt="ZB AutoCare" className="h-24 md:h-32 mb-6" />
               
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4">
                 35+ Years of Experience in{' '}
                 <span className="text-gradient">Mechanical Work</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-xl mx-auto lg:mx-0">
+              <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-xl">
                 Trusted Car Mechanic in Karachi — Experts in Engine, Transmission & Complete Car Maintenance
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-start">
                 <a href="tel:+923032931424" className="btn-primary inline-flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />
                   Call Now
