@@ -38,11 +38,11 @@ const Index = () => {
           <img 
             src={workshopHero} 
             alt="" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-right"
           />
-          {/* Dark gradient overlay for readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+          {/* Dark gradient overlay - strong on left, fades to right */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/30"></div>
         </div>
         
         <div className="container-custom relative z-10 py-12">
