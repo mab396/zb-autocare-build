@@ -45,7 +45,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/30"></div>
         </div>
         
-        <div className="container-custom relative z-10 py-12">
+        <div className="relative z-10 py-12 px-0">
           <div className="max-w-2xl">
             {/* Content */}
             <div className="text-left animate-slide-up">
