@@ -46,7 +46,7 @@ const Index = () => {
         </div>
         
         <div className="container-custom relative z-10 py-12">
-          <div className="max-w-2xl pl-4 md:pl-8 lg:pl-12">
+          <div className="max-w-2xl">
             {/* Content */}
             <div className="text-left animate-slide-up">
               <img src={logo} alt="ZB AutoCare" className="h-24 md:h-32 mb-6" />
