@@ -4,7 +4,7 @@ import {
   ThumbsUp, DollarSign, Star, Phone, CheckCircle 
 } from 'lucide-react';
 import logo from '@/assets/logo.png';
-import heroBanner from '@/assets/hero-banner.png';
+import workshopHero from '@/assets/workshop-hero.jpg';
 
 const services = [
   { icon: Wrench, title: 'Engine Work', desc: 'Complete engine repair & overhaul' },
@@ -33,10 +33,20 @@ const Index = () => {
     <main>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary to-background"></div>
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src={workshopHero} 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+          {/* Dark gradient overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+        </div>
         
         <div className="container-custom relative z-10 py-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="max-w-2xl">
             {/* Content */}
             <div className="text-center lg:text-left animate-slide-up">
               <img src={logo} alt="ZB AutoCare" className="h-24 md:h-32 mx-auto lg:mx-0 mb-6" />
@@ -59,19 +69,9 @@ const Index = () => {
                   View Services
                 </Link>
               </div>
-            </div>
-
-            {/* Hero Image */}
-            <div className="relative animate-fade-in">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src={heroBanner} 
-                  alt="ZB AutoCare - Car Repair Services" 
-                  className="w-full h-auto"
-                />
-              </div>
+              
               {/* Floating badge */}
-              <div className="absolute -bottom-4 -left-4 bg-card p-4 rounded-xl shadow-lg border border-border">
+              <div className="inline-flex mt-8 bg-card/90 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-border">
                 <div className="flex items-center gap-2">
                   <div className="flex -space-x-1">
                     {[...Array(5)].map((_, i) => (
